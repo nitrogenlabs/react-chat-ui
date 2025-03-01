@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react'
-import Button from '../../src/Button/Button'
-import Input from '../../src/Input/Input'
-import MessageList from '../../src/MessageList/MessageList'
+import Button from '../../Button/Button'
+import Input from '../../Input/Input'
+import MessageList from '../../MessageList/MessageList'
 import { token } from '../utils/common'
 import {
   audioMessage,
@@ -26,8 +26,8 @@ function useForceUpdate() {
 function MessageListExample() {
   const [messageListArray, setMessageListArray] = useState<any>([])
   const [status, setStatus] = useState<string>('')
-  const messageListReferance = useRef()
-  const inputReferance = useRef()
+  const messageListReferance = useRef(null)
+  const inputReferance = useRef(null)
 
   const forceUpdate = useForceUpdate()
 

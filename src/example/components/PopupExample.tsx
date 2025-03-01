@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { FaTimes } from 'react-icons/fa'
-import Button from '../../src/Button/Button'
-import Popup from '../../src/Popup/Popup'
+import Button from '../../Button/Button'
+import Popup from '../../Popup/Popup'
 
 function PopupExample() {
   const [show, setShow] = useState<boolean>(false)

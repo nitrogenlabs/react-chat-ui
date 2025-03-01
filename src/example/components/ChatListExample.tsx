@@ -1,11 +1,11 @@
 import Identicon from 'identicon.js'
-import loremIpsum from 'lorem-ipsum'
 import React, { useEffect, useState } from 'react'
 import { BsListTask } from 'react-icons/bs'
-import ChatList from '../../src/ChatList/ChatList'
-import SideBar from '../../src/SideBar/SideBar'
-import { IChatItemProps } from '../../src/type'
+import ChatList from '../../ChatList/ChatList'
+import SideBar from '../../SideBar/SideBar'
+import { IChatItemProps } from '../../type'
 import { FaUsers } from 'react-icons/fa'
+import {loremIpsum} from '../utils/textUtils'
 
 function Test(params: any) {
   return (

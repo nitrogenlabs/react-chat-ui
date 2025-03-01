@@ -1,7 +1,7 @@
-import loremIpsum from 'lorem-ipsum'
 import { useEffect, useState } from 'react'
-import MeetingList from '../../src/MeetingList/MeetingList'
+import MeetingList from '../../MeetingList/MeetingList'
 import { photo, token } from '../utils/common'
+import {loremIpsum} from '../utils/textUtils'
 
 function MeetingListExample() {
   const [meetingListArray, setMeetingListArray] = useState<any>([])

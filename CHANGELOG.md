@@ -10,7 +10,7 @@
 
 ```js
 
-import { MeetlingLink } from 'react-chat-elements'
+import { MeetlingLink } from 'react-chat-ui'
 
 <MeetlingLink
 	actionButtons={[
@@ -36,7 +36,7 @@ import { MeetlingLink } from 'react-chat-elements'
 ### In MessageList component usage;
 
 ```js
-import { MessageList } from 'react-chat-elements'
+import { MessageList } from 'react-chat-ui'
 
 <MessageList
 	actionButtons={[
@@ -80,13 +80,13 @@ This update target to fix component ref broken problems
 
 Fixed issues:
 
-- https://github.com/Detaysoft/react-chat-elements/issues/158
-- https://github.com/Detaysoft/react-chat-elements/issues/157
-- https://github.com/Detaysoft/react-chat-elements/issues/142
+- https://github.com/Detaysoft/react-chat-ui/issues/158
+- https://github.com/Detaysoft/react-chat-ui/issues/157
+- https://github.com/Detaysoft/react-chat-ui/issues/142
 
-1.  All react-chat-elements components turneded to function component for "ref" property problems.
+1.  All react-chat-ui components turneded to function component for "ref" property problems.
 
-2.  In the [Input](https://github.com/Detaysoft/react-chat-elements#input-component) component `referance={...}` instead of use `ref={...}`
+2.  In the [Input](https://github.com/Detaysoft/react-chat-ui#input-component) component `referance={...}` instead of use `ref={...}`
 
 3.  **10.16.2** and before vesion usage
 
@@ -95,7 +95,7 @@ Fixed issues:
     After **11.0.0** version usage is:
 
     ```js
-    import { Input } from 'react-chat-elements'
+    import { Input } from 'react-chat-ui'
 
     <Input
     	ref='input'
@@ -111,7 +111,7 @@ Fixed issues:
 
     ```js
 
-    import { Input } from 'react-chat-elements'
+    import { Input } from 'react-chat-ui'
     let clearRef = () => {};
     this.inputReferance = React.createRef();
 
@@ -131,7 +131,7 @@ Fixed issues:
 
     ```js
 
-    import { Input } from 'react-chat-elements'
+    import { Input } from 'react-chat-ui'
     let clearRef = () => {};
     const inputReferance = React.useRef();
 
@@ -147,12 +147,12 @@ Fixed issues:
 
     ```
 
-4.  In the [MessageList](https://github.com/Detaysoft/react-chat-elements#messagelist-component) component usage `referance={...}` instead of use `ref={...}`
+4.  In the [MessageList](https://github.com/Detaysoft/react-chat-ui#messagelist-component) component usage `referance={...}` instead of use `ref={...}`
 
     **Class Component:**
 
     ```js
-    import { MessageList } from 'react-chat-elements'
+    import { MessageList } from 'react-chat-ui'
     this.messageList = React.createRef();
 
     <MessageList
@@ -176,7 +176,7 @@ Fixed issues:
     **Function Component:**
 
     ```js
-    import { MessageList } from 'react-chat-elements'
+    import { MessageList } from 'react-chat-ui'
     const messageListReferance = React.useRef();
 
     <MessageList

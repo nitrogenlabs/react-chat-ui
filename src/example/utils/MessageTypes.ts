@@ -1,5 +1,5 @@
-import loremIpsum from 'lorem-ipsum'
-import { MessageType } from '../../src/type'
+
+import { MessageType } from '../../type'
 import { getRandomColor, photo, token } from './common'
 import { MdOutlineVideoCall } from 'react-icons/md'
 
@@ -7,7 +7,7 @@ export const photoMessage: MessageType = {
   type: 'photo',
   id: String(Math.random()),
   position: token() >= 1 ? 'right' : 'left',
-  title: loremIpsum({ count: 2, units: 'words' }),
+  title: new LoremIpsum({ count: 2, units: 'words' }),
   focus: true,
   date: +new Date(),
   forwarded: true,
@@ -15,7 +15,7 @@ export const photoMessage: MessageType = {
   removeButton: true,
   notch: true,
   retracted: false,
-  text: loremIpsum({ count: 1, units: 'sentences' }),
+  text: new LoremIpsum({ count: 1, units: 'sentences' }),
   titleColor: getRandomColor(),
   status: 'waiting',
   statusTitle: token() >= 5 ? 'Desktop' : 'Mobile',

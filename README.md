@@ -1,26 +1,26 @@
-[![npm](https://img.shields.io/npm/dt/react-chat-elements.svg?label=npm-install&style=flat)]() [![Github pre-)release](https://img.shields.io/github/release-pre/Detaysoft/react-chat-elements.svg?style=flat)]()
+[![npm](https://img.shields.io/npm/dt/react-chat-ui.svg?label=npm-install&style=flat)]() [![Github pre-)release](https://img.shields.io/github/release-pre/Detaysoft/react-chat-ui.svg?style=flat)]()
 
-# react-chat-elements
+# react-chat-ui
 
 ## Reactjs chat elements
 
 ## NOTE: this package does not support react-native anymore.
 
-## **[Full Documentation](https://detaysoft.github.io/docs-react-chat-elements/)**, **[Changelog](https://github.com/Detaysoft/react-chat-elements/blob/master/CHANGELOG.md)**
+## **[Full Documentation](https://detaysoft.github.io/docs-react-chat-ui/)**, **[Changelog](https://github.com/Detaysoft/react-chat-ui/blob/master/CHANGELOG.md)**
 
 ## Install
 
 ```
-npm install react-chat-elements --save
+npm install react-chat-ui --save
 ```
 
 ### Imports
 
 ```javascript
 // RCE CSS
-import 'react-chat-elements/dist/main.css'
+import 'react-chat-ui/dist/main.css'
 // MessageBox component
-import { MessageBox } from 'react-chat-elements'
+import { MessageBox } from 'react-chat-ui'
 ```
 
 ## Components
@@ -48,7 +48,7 @@ import { MessageBox } from 'react-chat-elements'
 ![chatitem-photo](https://user-images.githubusercontent.com/15075759/29243612-d7f45ce0-7fab-11e7-96ce-7792e861d6aa.png)
 
 ```javascript
-import { ChatItem } from 'react-chat-elements'
+import { ChatItem } from 'react-chat-ui'
 ;<ChatItem
   avatar={'https://facebook.github.io/react/img/logo.svg'}
   alt={'Reactjs'}
@@ -90,7 +90,7 @@ import { ChatItem } from 'react-chat-elements'
 | ![file-message](https://user-images.githubusercontent.com/15075759/29243524-786baf8c-7fa9-11e7-92b2-3960cc34fcf4.png) | ![photo-message](https://user-images.githubusercontent.com/15075759/29243556-1368c4e8-7faa-11e7-9fdd-57b67542c381.png) | ![text-message](https://user-images.githubusercontent.com/15075759/29243573-a809456e-7faa-11e7-97b4-d258bc6a7728.png) | ![location-message](https://user-images.githubusercontent.com/15075759/30582943-2b3338aa-9d2e-11e7-93d5-8614563b9217.png) | ![](https://user-images.githubusercontent.com/15075759/98530021-74ca1300-228f-11eb-88ab-5ae5ae33616d.png) | ![](https://user-images.githubusercontent.com/41473129/105960654-98327c00-608e-11eb-9ac4-5b014974b87c.png) |
 
 ```javascript
-import { MessageBox } from 'react-chat-elements'
+import { MessageBox } from 'react-chat-ui'
 ;<MessageBox
   position={'left'}
   type={'photo'}
@@ -151,7 +151,7 @@ import { MessageBox } from 'react-chat-elements'
 ## Reply Message Component
 
 ```javascript
-import { MessageBox } from 'react-chat-elements'
+import { MessageBox } from 'react-chat-ui'
 ;<MessageBox
   reply={{
     photoURL: 'https://facebook.github.io/react/img/logo.svg',
@@ -171,7 +171,7 @@ import { MessageBox } from 'react-chat-elements'
 ## MeetingMessage Component
 
 ```javascript
-import { MeetingMessage } from 'react-chat-elements'
+import { MeetingMessage } from 'react-chat-ui'
 
 <MeetingMessage
     subject={'New Release'}
@@ -235,7 +235,7 @@ import { MeetingMessage } from 'react-chat-elements'
 ![meetinglink-photo](https://user-images.githubusercontent.com/53093667/152175228-4fcb5d83-8a54-4378-8cb3-c85f939e510f.png)
 
 ```javascript
-import { MeetingLink } from 'react-chat-elements'
+import { MeetingLink } from 'react-chat-ui'
 ;<MeetingLink meetingID='1' title='Lorem ipsum dolor sit amet.' />
 ```
 
@@ -250,7 +250,7 @@ import { MeetingLink } from 'react-chat-elements'
 ## SystemMessage Component
 
 ```javascript
-import { SystemMessage } from 'react-chat-elements'
+import { SystemMessage } from 'react-chat-ui'
 ;<SystemMessage text={'End of conversation'} />
 ```
 
@@ -265,7 +265,7 @@ import { SystemMessage } from 'react-chat-elements'
 ![messagelist-photo](https://user-images.githubusercontent.com/15075759/29243641-932f3188-7fac-11e7-918d-a434bffc690e.png)
 
 ```javascript
-import { MessageList } from 'react-chat-elements'
+import { MessageList } from 'react-chat-ui'
 messageListReferance = React.createRef();
 
 <MessageList
@@ -313,7 +313,7 @@ messageListReferance = React.createRef();
 ![chatlist-photo](https://user-images.githubusercontent.com/15075759/29243666-2f147e14-7fad-11e7-9c8b-717cc3cdd0c6.png)
 
 ```javascript
-import { ChatList } from 'react-chat-elements'
+import { ChatList } from 'react-chat-ui'
 
 <ChatList
     className='chat-list'
@@ -346,7 +346,7 @@ import { ChatList } from 'react-chat-elements'
 ## Input Component
 
 ```javascript
-import { Input } from 'react-chat-elements'
+import { Input } from 'react-chat-ui'
 inputReferance = React.createRef()
 ;<Input
   referance={inputReferance}
@@ -390,7 +390,7 @@ inputClear()
 ## Button Component
 
 ```javascript
-import { Button } from 'react-chat-elements'
+import { Button } from 'react-chat-ui'
 ;<Button text={'click me!'} />
 ```
 
@@ -407,7 +407,7 @@ import { Button } from 'react-chat-elements'
 ## Popup Component
 
 ```javascript
-import { Popup } from 'react-chat-elements'
+import { Popup } from 'react-chat-ui'
 ;<Popup
   show={this.state.show}
   header='Lorem ipsum dolor sit amet.'
@@ -454,7 +454,7 @@ import { Popup } from 'react-chat-elements'
 ## SideBar Component
 
 ```javascript
-import { SideBar } from 'react-chat-elements'
+import { SideBar } from 'react-chat-ui'
 ;<SideBar top={<div>'TOP' area</div>} center={<div>'CENTER' area</div>} bottom={<div>'BOTTOM' area</div>} />
 ```
 
@@ -470,7 +470,7 @@ import { SideBar } from 'react-chat-elements'
 ## Navbar Component
 
 ```javascript
-import { Navbar } from 'react-chat-elements'
+import { Navbar } from 'react-chat-ui'
 ;<Navbar left={<div>'LEFT' area</div>} center={<div>'CENTER' area</div>} right={<div>'RIGHT' area</div>} />
 ```
 
@@ -486,7 +486,7 @@ import { Navbar } from 'react-chat-elements'
 ## Dropdown Component
 
 ```javascript
-import { Dropdown } from 'react-chat-elements'
+import { Dropdown } from 'react-chat-ui'
 ;<Dropdown
   buttonProps={{
     text: 'Dropdown',
@@ -530,7 +530,7 @@ import { Dropdown } from 'react-chat-elements'
 ## Avatar Component
 
 ```javascript
-import { Avatar } from 'react-chat-elements'
+import { Avatar } from 'react-chat-ui'
 ;<Avatar src={'https://facebook.github.io/react/img/logo.svg'} alt={'logo'} size='large' type='circle flexible' />
 ```
 
@@ -550,7 +550,7 @@ import { Avatar } from 'react-chat-elements'
 ## LocationMessage Component
 
 ```javascript
-import { LocationMessage } from 'react-chat-elements'
+import { LocationMessage } from 'react-chat-ui'
 ;<LocationMessage
   data={{
     latitude: '37.773972',
@@ -578,7 +578,7 @@ import { LocationMessage } from 'react-chat-elements'
 ![spotify](https://user-images.githubusercontent.com/15075759/31466094-ad5852b8-aede-11e7-91bc-8a29e7427552.png)
 
 ```javascript
-import { SpotifyMessage } from 'react-chat-elements'
+import { SpotifyMessage } from 'react-chat-ui'
 ;<SpotifyMessage theme='white' view='coverart' uri={'spotify:user:spotify:playlist:3rgsDhGHZxZ9sB9DQWQfuf'} />
 ```
 
@@ -598,7 +598,7 @@ import { SpotifyMessage } from 'react-chat-elements'
 ![meeting-photo](https://user-images.githubusercontent.com/15075759/90499887-cd878500-e152-11ea-9e13-80118bf2c94f.png)
 
 ```javascript
-import { MeetingItem } from 'react-chat-elements'
+import { MeetingItem } from 'react-chat-ui'
 ;<MeetingItem
   subject={'New Release!!!'}
   avatars={[
@@ -638,7 +638,7 @@ import { MeetingItem } from 'react-chat-elements'
 ![meetingClosable](https://user-images.githubusercontent.com/53093667/90954468-2588f900-e47d-11ea-865e-10522e05f23f.gif)
 
 ```javascript
-import { MeetingList } from 'react-chat-elements'
+import { MeetingList } from 'react-chat-ui'
 
 <MeetingList
     className='meeting-list'

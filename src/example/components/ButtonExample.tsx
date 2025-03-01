@@ -1,5 +1,5 @@
 import { FaComments } from 'react-icons/fa'
-import Button from '../../src/Button/Button'
+import Button from '../../Button/Button'
 
 function ButtonExample() {
   return (
