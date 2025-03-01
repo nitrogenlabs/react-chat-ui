@@ -42,6 +42,7 @@
     "publish:major": "npm version major && npm run publish:tags && npm publish",
     "publish:minor": "npm version minor && npm run publish:tags && npm publish",
     "publish:patch": "npm version patch && npm run publish:tags && npm publish",
+    "publish:tags": "git push --tags && git push origin HEAD",
     "test": "lex test",
     "test:coverage": "npm run test -- --coverage --collectCoverageFrom=src/**/*.js --collectCoverageFrom=!src/index.js",
     "build:lib": "npm run build && rollup -c && npm run move:types"
